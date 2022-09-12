@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/byname.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <title>Recipies By Name</title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <input type="text" id="search" oninput="debounce(getData,1000)" placeholder="Enter recipie name">
+    <div id="result">
+        
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import navbar from "./scripts/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+</script>
+<script src="./scripts/byname.js"></script>

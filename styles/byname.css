@@ -1,0 +1,25 @@
+#search{
+    background: aqua;
+    margin-top: 1%;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 20px;
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid red;
+    color: grey;
+}
+#result{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 1%;
+    column-gap: 3%;
+    margin-top: 2%;
+}
+#result>div{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 2%
+}
+img{
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+#recipieofday{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+.main{
+    display: flex;
+    gap: 5%;
+}
+.main>img{
+    width: 35%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 20px;
+    border: 3px solid red;
+}
+.main>div{
+    width: 60%;
+}

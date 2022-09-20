@@ -1,18 +1,51 @@
-#recipieofday{
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
+#recipieofday {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
 }
-.main{
-    display: flex;
-    gap: 5%;
+.main {
+  display: flex;
+  gap: 5%;
 }
-.main>img{
-    width: 35%;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    border-radius: 20px;
-    border: 3px solid red;
+.main > img {
+  width: 35%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 20px;
+  border: 3px solid red;
 }
-.main>div{
-    width: 60%;
+.main > div {
+  width: 60%;
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  #recipieofday {
+    width: 100%;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  #recipieofday {
+    width: 90%;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
 }

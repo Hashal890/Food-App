@@ -1,34 +1,49 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-#navbar{
-    display: flex;
-    gap: 5%;
-    background-color: rgb(28,40,54);
-    justify-content: space-between;
-    text-align: center;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    padding-top: 2%;
-    padding-bottom: 2%;
+#navbar {
+  display: flex;
+  gap: 5%;
+  background-color: rgb(28, 40, 54);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-#navbar>div{
-    display: flex;
-    column-gap: 50px;
-    padding-right: 2%;
-    padding-left: 2%;
+#navbar > div:first-child {
+  padding-left: 1rem;
 }
-#navbar h1{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+#navbar > div:last-child {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-right: 1rem;
 }
-#navbar a{
-    color: white;
-    text-decoration: none;
+#navbar h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
-#navbar a:hover{
-    color: gold;
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+#navbar a:hover {
+  color: gold;
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  h1 {
+    font-size: 8px !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  h1 {
+    font-size: 14px !important;
+  }
 }

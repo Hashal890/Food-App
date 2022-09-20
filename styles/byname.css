@@ -1,25 +1,53 @@
-#search{
-    background: aqua;
-    margin-top: 1%;
-    width: 40%;
-    margin-left: 30%;
-    font-size: 20px;
-    padding: 2%;
-    border-radius: 20px;
-    border: 2px solid red;
-    color: grey;
+#search {
+  background: aqua;
+  margin-top: 1%;
+  width: 40%;
+  margin-left: 30%;
+  font-size: 20px;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 2px solid red;
+  color: grey;
 }
-#result{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 1%;
-    column-gap: 3%;
-    margin-top: 2%;
+#result {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2%;
+  color: grey;
 }
-#result>div{
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    padding: 2%
+#result > div {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  #search {
+    width: 70%;
+    margin-left: 10%;
+    font-size: 10px;
+  }
+  #result {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  #search {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 12px;
+  }
+  #result {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 12px;
+  }
 }

@@ -9,6 +9,7 @@ Hello everyone, here is my Food App project which I builded in unit-3 with the h
 - Get recipie of the day.
 - Get some random recipies.
 - Login and sigup functionality.
+- Debouncing feature.
 - Responsive layout.
 
 
